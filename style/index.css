@@ -62,9 +62,24 @@ video {
     text-align: center;
 }
 
-.accommodation {
-    max-height: 500px;
-    overflow-y: scroll;
+.accommodation .content-page {
+    /* max-height: 500px; */
+    /* overflow-y: scroll; */
+}
+
+.accommodation .content-page h2 {
+    font-size: 0.2rem;
+}
+
+.accommodation .content-page h3 {
+    font-size: 0.18rem;
+}
+
+.accommodation .content-page li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-left: 20px;
+    /* list-style-type: circle !important; */
 }
 
 .accommodation h3,
@@ -280,7 +295,7 @@ a:hover {
 }
 
 li {
-    list-style: outside none;
+    /* list-style: outside none; */
 }
 
 h1 {
@@ -642,7 +657,7 @@ img {
 }
 
 .g-foot {
-    background: url("./image/foot.jpg") center no-repeat;
+    background: url("../image/foot.jpg") center no-repeat;
     background-size: cover;
     position: relative;
     color: #fff;
@@ -660,7 +675,7 @@ img {
     bottom: 0;
     right: 0;
     height: 0.75rem;
-    background: url("./image/foot.png") center no-repeat;
+    background: url("../image/foot.png") center no-repeat;
     background-size: 100% 100%;
 }
 
@@ -1310,7 +1325,7 @@ img {
     line-height: 0.9rem;
     color: #919191;
     padding-left: 0.65rem;
-    background: url("./image/img14.png") 0.42rem center no-repeat;
+    background: url("../image/img14.png") 0.42rem center no-repeat;
     background-size: 0.14rem;
 }
 
@@ -1954,7 +1969,7 @@ img {
     line-height: 0.65rem;
     color: #919191;
     padding-left: 0.24rem;
-    background: url("./image/img14.png") left center no-repeat;
+    background: url("../image/img14.png") left center no-repeat;
     background-size: 0.14rem;
 }
 
