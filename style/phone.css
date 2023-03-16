@@ -1,0 +1,484 @@
+a,
+.transition,
+ :before,
+img,
+.g-nav {
+    transition: All 0.5s ease;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+}
+
+.flexColumn {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.itemsCenter {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.flexAround {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.flexBetween {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.flexWrap {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: .24rem;
+    }
+    html {
+        font-size: 50px;
+    }
+    .wal {
+        max-width: 8rem;
+    }
+    body.navShow {
+        overflow: hidden;
+    }
+    body.navShow .g-head .navA {
+        background-image: url("../image/close.png");
+    }
+    body.navShow .g-nav {
+        right: 0;
+    }
+    .g-headD {
+        height: 1rem;
+    }
+    .g-head {
+        position: fixed;
+        box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+    }
+    .g-head .wal {
+        min-height: 1rem;
+    }
+    .g-head a.logo {
+        width: 4rem;
+    }
+    .g-head .language,
+    .g-head .topSearch {
+        display: none;
+    }
+    .g-head .navA {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: auto;
+        right: -0.3rem;
+        top: 0;
+        bottom: auto;
+        width: 1rem;
+        height: 1rem;
+        background: url("../image/navA.png") center no-repeat;
+        background-size: .4rem;
+    }
+    .g-nav {
+        position: fixed;
+        overflow-y: auto;
+        width: 100%;
+        background: #fff;
+        right: -100%;
+        top: 1rem;
+        bottom: 0;
+    }
+    .g-nav li {
+        border-top: #eee solid 1px;
+        width: 100%;
+    }
+    .g-nav a.name {
+        height: 1rem;
+        line-height: 1rem;
+        font-size: .28rem;
+        padding-left: .5rem;
+        margin: 0;
+    }
+    .g-nav .list {
+        border-top: #eee solid 1px;
+        display: none;
+        padding: .15rem 0;
+    }
+    .g-nav .list a {
+        display: block;
+        font-size: .26rem;
+        height: .7rem;
+        line-height: .7rem;
+        padding-left: .5rem;
+    }
+    .g-foot:before {
+        height: 2.1rem;
+    }
+    .g-foot .logo {
+        width: 5rem;
+        margin: 0 auto;
+    }
+    .g-foot .content {
+        padding: .3rem 0;
+        line-height: .44rem;
+        text-align: center;
+    }
+    .g-foot .share dl {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    .g-foot .share dd {
+        margin: 0 .15rem;
+        width: .6rem;
+    }
+    .g-foot .ewm {
+        position: static;
+        padding: .5rem 0 1rem 0;
+    }
+    .g-foot .ewm dl {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    .g-foot .ewm dd {
+        margin: 0 .35rem;
+        width: 2rem;
+        font-size: .2rem;
+    }
+    .g-foot .ewm dd .name {
+        padding: .2rem 0 .08rem 0;
+    }
+    .g-foot .msg {
+        position: static;
+        text-align: center;
+        padding: .1rem 0 .2rem 0;
+    }
+    .g-foot .links {
+        position: relative;
+        bottom: 0;
+        width: 4.5rem;
+        margin: 0 auto;
+    }
+    .g-foot .links .name {
+        height: .7rem;
+        line-height: .7rem;
+        padding-left: .28rem;
+    }
+    .g-foot .links .name:before {
+        right: .3rem;
+        width: .1rem;
+    }
+    .g-foot .links dl a {
+        line-height: .7rem;
+        padding-left: .28rem;
+    }
+    /*index*/
+    .p-dots span {
+        width: .16rem;
+        height: .16rem;
+        margin: 0 .1rem;
+    }
+    .indexFlash li .name a {
+        line-height: .9rem;
+        font-size: .28rem;
+    }
+    .indexFlash .arrow {
+        display: none;
+    }
+    .index-1 {
+        padding-bottom: 1rem;
+    }
+    .index-1 .col-1 {
+        width: 100%;
+    }
+    .index-1 .col-1 h2 {
+        font-size: .36rem;
+    }
+    .index-1 .col-1 .content {
+        font-size: .24rem;
+        line-height: .44rem;
+    }
+    .index-1 .col-1 .btn a {
+        font-size: .32rem;
+        line-height: .9rem;
+    }
+    .index-1 .col-1 .btn a em {
+        background-size: .12rem;
+        padding-right: .32rem;
+    }
+    .index-1 .col-2 {
+        width: 100%;
+        padding-top: .6rem;
+    }
+    .index-1 .col-2 h2 {
+        font-size: .32rem;
+        padding: .5rem 0 .3rem 0;
+    }
+    .index-1 .col-2 .list li {
+        font-size: .24rem;
+        line-height: .42rem;
+    }
+    .index-1 .col-2 .list li:before {
+        height: .42rem;
+    }
+    .index-1 .col-2 .list2 li {
+        line-height: .44rem;
+    }
+    .index-1 .col-2 .list2 li .num {
+        font-size: .28rem;
+    }
+    .index-1 .col-2 .list2 li .name {
+        font-size: .28rem;
+    }
+    .index-1 .col-2 .list2 li .msg {
+        font-size: .22rem;
+        line-height: .36rem;
+    }
+    .index-1 .col-2 .list2 li p {
+        font-size: .24rem;
+        line-height: .36rem;
+    }
+    .index-2 .wal {
+        margin: 0 auto;
+    }
+    .index-2 .list-wrapper {
+        width: 21rem;
+        margin-left: -10.5rem;
+    }
+    .index-2 .list-wrapper li .name {
+        font-size: .28rem;
+    }
+    .index-3 h2 {
+        font-size: .32rem;
+    }
+    .index-3 .col-1 {
+        width: 100%;
+    }
+    .index-3 .col-1 .img-list a.name div {
+        font-size: .26rem;
+    }
+    .index-3 .col-1 .dots {
+        padding-top: .25rem;
+    }
+    .index-3 .col-2 {
+        width: 100%;
+        padding-top: .5rem;
+    }
+    .index-3 .col-2 li {
+        font-size: .24rem;
+        line-height: .42rem;
+        padding: .2rem 0;
+    }
+    /*page*/
+    .p-curr {
+        line-height: 1rem;
+        padding-left: .75rem;
+        background-size: .24rem;
+    }
+    .side-nav {
+        display: none;
+    }
+    .w1080 {
+        width: 100%;
+    }
+    .globalStrategy-box {
+        margin-left: -.3rem;
+        margin-right: -.3rem;
+    }
+    .globalStrategy {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .globalStrategy .map {
+        position: relative;
+        width: 10.69rem;
+    }
+    .globalStrategy .map li div {
+        font-size: .22rem;
+    }
+    .fees li .row .col {
+        width: 100%;
+        padding: .25rem .2rem .25rem 0;
+    }
+    .fees li .row .col h2 {
+        font-size: .3rem;
+        line-height: .36rem;
+    }
+    .fees li .row .col .content {
+        font-size: .24rem;
+        line-height: .42rem;
+    }
+    .fees li .row dl.info {
+        width: 2.3rem;
+        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+    }
+    .fees li .row dl.info dd {
+        font-size: .26rem;
+        line-height: .4rem;
+    }
+    .fees .msg {
+        line-height: .46rem;
+    }
+    .students {
+        padding: 0;
+    }
+    .students .list li {
+        width: 50%;
+    }
+    .students .list a .layer .name {
+        font-size: .22rem;
+        line-height: .32rem;
+    }
+    .accommodation {
+        font-size: .26rem;
+        line-height: .46rem;
+    }
+    .p-banner2 .wal .curr {
+        background-size: .24rem;
+        padding-left: .34rem;
+    }
+    .admissions li {
+        padding: .25rem .07rem;
+        line-height: .4rem;
+    }
+    .admissions li .name {
+        font-size: .28rem;
+        padding-top: .08rem;
+    }
+    .p-num {
+        font-size: .26rem;
+    }
+    .p-num div a {
+        font-size: .32rem;
+    }
+    .videos ul {
+        margin-left: -.3rem;
+    }
+    .videos li {
+        width: 50%;
+        padding: 0 0 .2rem .3rem;
+    }
+    .videos a .name {
+        font-size: .24rem;
+        line-height: .34rem;
+    }
+    .faq h2 {
+        font-size: .32rem;
+        line-height: .42rem;
+        padding-bottom: .1rem;
+    }
+    .faq h3 {
+        font-size: .28rem;
+        line-height: .42rem;
+        padding-bottom: .06rem;
+    }
+    .faq .content {
+        font-size: .24rem;
+        line-height: .42rem;
+    }
+    .page-show-head .curr {
+        line-height: 1rem;
+        padding-left: .34rem;
+        background-size: .24rem;
+    }
+    .page-show-head .title .time {
+        font-size: .24rem;
+    }
+    .divisions {
+        padding: 0;
+        margin-right: -.3rem;
+        margin-left: -.3rem;
+    }
+    .divisions .scroll {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .divisions .title,
+    .divisions .row {
+        width: 14rem;
+    }
+    .divisions .title {
+        font-size: .28rem;
+        line-height: .9rem;
+    }
+    .divisions li {
+        width: 14rem;
+    }
+    .divisions li .row {
+        font-size: .24rem;
+        line-height: .44rem;
+    }
+    .divisions li .row .col-1,
+    .divisions li .row .col-2,
+    .divisions li .row .col-3 {
+        padding: .2rem .25rem;
+    }
+    .divisions li .row .col-1 {
+        line-height: .34rem;
+        padding: .25rem .25rem .25rem .35rem;
+    }
+    .divisions li .row .col-2 a {
+        padding-right: .3rem;
+        background-size: .2rem;
+    }
+    .divisions li .row .col-3 dd:before {
+        height: .44rem;
+    }
+    .divisions .tips {
+        font-size: .24rem;
+        line-height: .44rem;
+        padding: .3rem .3rem 1rem .3rem;
+    }
+    .divisions .tips h3 {
+        font-size: .24rem;
+    }
+    .page-show p {
+        font-size: .26rem;
+        line-height: .42rem;
+    }
+    .page-show .img .name {
+        padding-top: .22rem;
+    }
+    .page-show h2 {
+        font-size: .34rem;
+    }
+    .page-show h3 {
+        font-size: .3rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wal {
+        margin: 0 .3rem;
+    }
+}
